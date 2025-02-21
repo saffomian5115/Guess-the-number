@@ -1,3 +1,4 @@
+
 var answer;
 document.querySelector("#heading1").innerHTML = "You Try<br>To Guess the Correct Number<br>🔰";
 
@@ -47,23 +48,23 @@ function check() {
             document.querySelector("#gamewin").style.visibility="visible";
             document.querySelector(".game").style.visibility="hidden";
         }
-        else if((Math.abs(answer-number)) > 250 ){
+        else if(Math.abs(answer-number) > 250 ){
             document.querySelector("#hint").innerHTML="No..!<br>🙄<br> So Far";
 
         }
-        else if((Math.abs(answer-number)) > 100 ){
+        else if(Math.abs(answer-number) > 100 ){
             document.querySelector("#hint").innerHTML="Try Again<br>🤨<br> Still Far";
 
         }
-        else if((Math.abs(answer-number)) > 50 ){
+        else if(Math.abs(answer-number) > 50 ){
             document.querySelector("#hint").innerHTML="No Bro<br>😎<br>Not too Close<br>Not to Far";
 
         }
-        else if((Math.abs(answer-number)) > 10 ){
+        else if(Math.abs(answer-number) > 10 ){
             document.querySelector("#hint").innerHTML="--- NOW ---<br>🤗<br>You are Closer";
 
         }
-        else if((Math.abs(answer-number)) > 1 ){
+        else if(Math.abs(answer-number) > 1 ){
             document.querySelector("#hint").innerHTML="Uffff bro<br>🔥🔥🔥<br> So Much Close";
         }
     }
